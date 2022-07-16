@@ -155,8 +155,10 @@ marquee {
     /* hrMenuBar*/
     .hrMenuBar {
         flex-direction: column;
+        background-color: inherit;
     }
     .hrMenuBar button {
+        background-color: burlywood;
         width: 100%;
         margin: 0 0 5px 0;
     }
