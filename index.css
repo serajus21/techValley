@@ -1,0 +1,206 @@
+body {
+    background-color: lightgoldenrodyellow;
+}
+* {
+    
+    scroll-behavior: smooth;
+}
+/* hrMenuBar container */
+.hrMenuBar {
+    background-color: burlywood;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+/* hrMenuBar buttons */
+.hrMenuBar button {
+    margin: 0 0 0 5px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    background-color: inherit;
+    color: white;
+    cursor: pointer;
+}
+.hrMenuBar button:hover {
+    background-color: gainsboro;
+    color: black;
+}
+
+/* banner */
+.banner {
+    height: 420px;
+    width: 100%;
+    margin: 5px 0 20px 0;
+}
+/* headline */
+.headline {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.headline mark {
+    padding: 5px 30px;
+    background-color: burlywood;
+    color: white;
+    border-radius: 50px;
+}
+/* marquee */
+marquee {
+    background-color: bisque;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+/* mainContent */
+.mainContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+/* rightMenu */
+.rightMenu {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+.rightMenu button {
+    margin: 0 0 10px 0;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: navajowhite;
+    color: gray;
+}
+.rightMenu button:hover {
+    box-shadow: 5px 5px 5px lightgray;
+    background-color: bisque;
+    color: black;
+}
+/* cityDescription */
+.cityDescription {
+    padding: 0 0 0 30px;
+}
+.cityDescription article>img {
+    width: 100%;
+    height: 420px;
+    margin: 0 ;
+}
+.cityDescription button {
+    margin: 30px 0 10px 0;
+    border: none;
+    font-size: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: gray;
+    color: navajowhite;
+    border-radius: 50px;
+}
+.cityDescription button:hover {
+    box-shadow: 3px 3px 5px black;
+}
+
+/* go to top button */
+#bottom {
+    border: none;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: burlywood;
+    color: black;
+}
+#bottom:hover {
+    box-shadow: 3px 3px 5px gray;
+}
+
+
+/* reachout */
+.reachout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: bisque;
+    margin: 5px 0;
+    padding: 10px 0;
+}
+.add, .contact {
+    background-color: rgb(254, 252, 250);
+    width: 50%;
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+    text-align: center;
+}
+
+/* copyright */
+.copyright {
+    background-color: burlywood;
+    color: black;
+    text-align: center;
+    padding: 2px;
+    margin: 10px 0 0 0;
+}
+
+
+
+
+                                    /* responsiveness start here */
+
+
+@media screen and (max-width: 500px) {
+    /* hrMenuBar*/
+    .hrMenuBar {
+        flex-direction: column;
+    }
+    .hrMenuBar button {
+        width: 100%;
+        margin: 0 0 5px 0;
+    }
+
+    /* headline */
+    .headline {
+        font-size: 7vw;
+    }
+
+    /* banner */
+    .banner {
+        height: 200px;
+    }
+
+    /* mainContent */
+    .mainContent {
+        flex-direction: column;
+    }
+    .rightMenu {
+        width: 100%;
+    }
+    .cityDescription {
+        width: 100%;
+        padding: 0;
+        text-align: left;
+    }
+    .cityDescription article>img {
+        height: 200px;
+        width: 100%;
+    }
+
+    /* reachout */
+    .reachout {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .add, .contact {
+        width: 100%;
+        margin: 10px 0;
+        padding: 20px 0;
+    }
+    address, section {
+        margin-left: 10px;
+    }
+
+    /* aboutMe */
+}
